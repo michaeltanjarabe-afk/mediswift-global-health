@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[97367,["/mediswift-global-health/_next/static/chunks/0dbhjjzl8qfwv.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"min-h-screen bg-slate-100 p-8","children":["$","div",null,{"className":"mx-auto max-w-3xl rounded-2xl bg-white p-8 shadow-lg","children":[["$","h1",null,{"className":"text-3xl font-bold text-slate-900","children":"Appointments"}],["$","p",null,{"className":"mt-2 text-slate-600","children":"Schedule and manage consultations"}]]}]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"hvRPjxmVHkkv3r7YLdaMh"}
+4:null

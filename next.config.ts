@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "export",
+  basePath: "/mediswift-global-health",
+  assetPrefix: "/mediswift-global-health/",
 };
 
 export default nextConfig;
