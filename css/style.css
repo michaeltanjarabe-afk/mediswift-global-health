@@ -1010,17 +1010,8 @@ p{ color: var(--color-text-muted); }
 .scroll-hero__bg{
   position: absolute;
   inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(160deg, var(--navy) 0%, var(--purple-600) 100%);
+  background: #FFFFFF;
   opacity: var(--hero-bg-opacity, 1);
-}
-.scroll-hero__bg-logo{
-  width: min(420px, 55vw);
-  height: auto;
-  opacity: 0.9;
-  filter: drop-shadow(0 12px 30px rgba(0,0,0,0.25));
 }
 .scroll-hero__media{
   position: relative;
@@ -1052,14 +1043,14 @@ p{ color: var(--color-text-muted); }
   margin-top: var(--space-4);
 }
 .scroll-hero__eyebrow{
-  color: #fff;
+  color: var(--purple);
   font-weight: 700;
   font-size: var(--fs-sm);
   letter-spacing: 0.04em;
   margin-bottom: 6px;
 }
 .scroll-hero__hint{
-  color: rgba(255,255,255,0.75);
+  color: var(--color-text-faint);
   font-size: var(--fs-xs);
 }
 .scroll-hero__title{
