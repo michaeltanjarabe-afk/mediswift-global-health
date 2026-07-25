@@ -64,37 +64,37 @@
 
 <main id="main">
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <span class="eyebrow reveal">Cebu City · Vaccination &amp; Medical Supplies</span>
-        <h1 class="reveal" style="--reveal-delay:60ms">Trusted Medical Care for Every <em>Nursing Journey</em></h1>
-        <p class="hero-lede reveal" style="--reveal-delay:120ms">MediSwift Global Health Inc. offers walk-in and home-service vaccinations plus the stethoscopes, CHN bags, and nursing kits our nursing and CHN students rely on every day.</p>
-        <div class="hero-cta reveal" style="--reveal-delay:180ms">
-          <a href="vaccination.html#appointment" class="btn btn-primary btn-split">Book a Vaccination<span class="btn-split__icon"><i data-icon="arrow-right"></i></span></a>
-          <a href="shop.html" class="btn btn-secondary"><i data-icon="bag"></i> Shop Supplies</a>
-        </div>
+  <!-- HERO: scroll-expand video -->
+  <section class="scroll-hero" id="scroll-hero" aria-label="MediSwift Global Health hero">
+    <div class="scroll-hero__stage">
+      <div class="scroll-hero__bg" style="background-image:url('assets/images/vaccines/vaccination-shoulder.jpg')" aria-hidden="true"></div>
+
+      <div class="scroll-hero__media" id="scroll-hero-media">
+        <video class="scroll-hero__video" src="assets/videos/vaccination-hero.mp4" autoplay muted loop playsinline aria-label="A nurse administering a vaccination to a patient"></video>
+        <div class="scroll-hero__media-overlay"></div>
       </div>
-      <div class="hero-visual reveal-scale" style="--reveal-delay:120ms">
-        <div class="phone-mockup float">
-          <div class="phone-mockup__notch"></div>
-          <div class="phone-mockup__screen">
-            <div class="phone-mockup__ring"></div>
-            <div class="phone-mockup__icon" aria-hidden="true"><i data-icon="stethoscope"></i></div>
+
+      <div class="scroll-hero__caption">
+        <p class="scroll-hero__eyebrow">Cebu City · Vaccination &amp; Medical Supplies</p>
+        <p class="scroll-hero__hint">Scroll to explore</p>
+      </div>
+
+      <div class="scroll-hero__title">
+        <h1 class="scroll-hero__word scroll-hero__word--left" id="hero-word-left">MediSwift</h1>
+        <h1 class="scroll-hero__word scroll-hero__word--right" id="hero-word-right">Global Health</h1>
+      </div>
+    </div>
+
+    <div class="scroll-hero__content" id="scroll-hero-content">
+      <div class="container">
+        <div class="scroll-hero__content-inner">
+          <span class="eyebrow">What We Offer</span>
+          <h2>Vaccination care and medical supplies, without the wait</h2>
+          <p>MediSwift Global Health Inc. offers walk-in and home-service vaccinations plus the stethoscopes, CHN bags, and nursing kits our nursing and CHN students rely on every day.</p>
+          <div class="hero-cta">
+            <a href="vaccination.html#appointment" class="btn btn-primary btn-split">Book a Vaccination<span class="btn-split__icon"><i data-icon="arrow-right"></i></span></a>
+            <a href="shop.html" class="btn btn-secondary"><i data-icon="bag"></i> Shop Supplies</a>
           </div>
-        </div>
-        <div class="float-card float-card--verified">
-          <div class="float-card__icon"><i data-icon="check"></i></div>
-          <div><strong>DOH-Aligned</strong><span>Vaccination Practices</span></div>
-        </div>
-        <div class="float-card float-card--book">
-          <div class="float-card__top">
-            <div class="float-card__icon"><i data-icon="syringe"></i></div>
-            <div><strong>Hepatitis B</strong><span>Vaccine</span></div>
-          </div>
-          <div class="float-card__meta"><i data-icon="clock"></i> Mon–Sat · 8AM–5PM</div>
-          <a href="vaccination.html#appointment" class="btn btn-primary btn-sm btn-block">Book Now</a>
         </div>
       </div>
     </div>
@@ -448,6 +448,7 @@
 <script src="js/products.js"></script>
 <script src="js/cart.js"></script>
 <script src="js/main.js"></script>
+<script src="js/scroll-hero.js"></script>
 <script>
   document.querySelectorAll('[data-add-to-cart]').forEach((btn) => {
     btn.addEventListener('click', () => {
