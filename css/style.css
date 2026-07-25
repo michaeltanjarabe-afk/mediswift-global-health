@@ -1008,16 +1008,20 @@ p{ color: var(--color-text-muted); }
   position: absolute;
   inset: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: var(--space-7);
   background: linear-gradient(160deg, var(--navy) 0%, var(--purple-600) 100%);
   opacity: var(--hero-bg-opacity, 1);
 }
 .scroll-hero__bg-logo{
-  width: min(240px, 32vw);
+  width: min(150px, 24vw);
   height: auto;
-  opacity: 0.92;
+  opacity: 0.85;
   filter: drop-shadow(0 12px 30px rgba(0,0,0,0.25));
+}
+@media (max-width: 640px){
+  .scroll-hero__bg{ align-items: flex-end; justify-content: center; padding-bottom: var(--space-8); }
 }
 .scroll-hero__media{
   position: relative;
