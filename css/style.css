@@ -299,6 +299,18 @@ p{ color: var(--color-text-muted); }
 .brand-logo{ width: auto; }
 .brand-logo--header{ height: 48px; }
 .brand-logo--footer{ height: 46px; }
+.brand-fullname{
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: var(--navy);
+  max-width: 14ch;
+}
+.footer-brand .brand-fullname{ color: #fff; }
+@media (max-width: 700px){
+  .site-header .brand-fullname{ display: none; }
+}
 
 .nav-links{
   display: none;
