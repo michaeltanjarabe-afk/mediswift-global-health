@@ -312,9 +312,9 @@ p{ color: var(--color-text-muted); }
   .site-header .brand-logo--header{ height: 38px; }
   .site-header .brand-fullname{
     display: block;
-    font-size: 0.6rem;
+    font-size: 0.75rem;
     line-height: 1.15;
-    max-width: 92px;
+    max-width: 110px;
   }
 }
 
