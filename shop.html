@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Medical Supplies Shop — Stethoscopes, CHN Bags &amp; Nursing Kits | MediSwift</title>
+<meta name="description" content="Shop Littmann and MediSwift stethoscopes, CHN bags, and nursing kits in Cebu City. Student-friendly pricing for nursing and CHN students.">
+<meta name="theme-color" content="#14126B">
+<link rel="icon" type="image/png" href="assets/images/favicon-64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand" aria-label="MediSwift Global Health — Home">
+      <img src="assets/images/icon.png" alt="" width="40" height="40">
+      <span class="brand-name">Medi<span>Swift</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="vaccination.html">Vaccination</a>
+      <a href="shop.html" aria-current="page">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="vaccination.html#appointment" class="btn btn-primary btn-sm nav-cta">Book Appointment</a>
+      <a href="cart.html" class="icon-btn" aria-label="View cart">
+        <i data-icon="cart"></i>
+        <span class="cart-badge" data-cart-count style="display:none">0</span>
+      </a>
+      <button class="icon-btn nav-toggle" data-nav-open aria-label="Open menu" aria-expanded="false">
+        <i data-icon="menu"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" data-nav>
+  <div class="mobile-nav__scrim" data-nav-close></div>
+  <div class="mobile-nav__panel" role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="mobile-nav__top">
+      <span class="brand-name">Medi<span>Swift</span></span>
+      <button class="icon-btn" data-nav-close aria-label="Close menu"><i data-icon="close"></i></button>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="vaccination.html">Vaccination Services</a>
+    <a href="shop.html">Medical Supplies</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart (<span data-cart-count>0</span>)</a>
+    <div class="mobile-nav__cta">
+      <a href="vaccination.html#appointment" class="btn btn-primary btn-block"><i data-icon="calendar"></i> Book Appointment</a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumbs"><a href="index.html">Home</a> <i data-icon="chevron-right" style="width:12px;height:12px"></i> <span>Medical Supplies Shop</span></div>
+      <span class="eyebrow reveal">Medical Supplies Shop</span>
+      <h1 class="reveal" style="--reveal-delay:60ms">Everything on your clinical checklist</h1>
+      <p class="reveal" style="--reveal-delay:120ms">Stethoscopes, CHN bags, and nursing kits — priced for students, built for the ward. Add items to your cart and send us an inquiry; no online payment required.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:var(--space-7)">
+    <div class="container">
+      <div class="product-toolbar" id="filters">
+        <button class="chip is-active" data-filter="all">All Products</button>
+        <button class="chip" data-filter="Stethoscopes">Stethoscopes</button>
+        <button class="chip" data-filter="CHN Bags">CHN Bags</button>
+        <button class="chip" data-filter="Nursing Kits & Tools">Nursing Kits &amp; Tools</button>
+        <button class="chip" data-filter="PPE & Vaccination Supplies">PPE &amp; Supplies</button>
+      </div>
+
+      <div class="grid grid-4" id="product-grid" aria-live="polite"></div>
+
+      <div class="form-note reveal" style="margin-top:var(--space-8)">
+        <i data-icon="check-circle"></i>
+        <span>Prices shown are indicative estimates. Final pricing, stock, and bulk/school discounts are confirmed when we respond to your inquiry.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--color-surface-alt)">
+    <div class="container">
+      <div class="pulse-band reveal">
+        <svg class="pulse-band__line scroll" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0,30 L40,30 L55,10 L70,50 L85,30 L150,30 L190,30 L205,10 L220,50 L235,30 L300,30 L340,30 L355,10 L370,50 L385,30 L450,30 L490,30 L505,10 L520,50 L535,30 L600,30 L640,30 L655,10 L670,50 L685,30 L750,30 L790,30 L805,10 L820,50 L835,30 L900,30 L940,30 L955,10 L970,50 L985,30 L1050,30 L1090,30 L1105,10 L1120,50 L1135,30 L1200,30" fill="none" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        <h2>Ordering for your whole batch or clinical group?</h2>
+        <p>We accommodate bulk orders for schools, RLE groups, and organizations. Send us your list and headcount for a custom quote.</p>
+        <div class="pulse-actions">
+          <a href="contact.html" class="btn btn-accent"><i data-icon="mail"></i> Request a Bulk Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand" aria-label="MediSwift Global Health — Home">
+          <img src="assets/images/icon.png" alt="" width="36" height="36">
+          <span class="brand-name">Medi<span style="color:var(--color-accent)">Swift</span></span>
+        </a>
+        <p>Vaccination services and medical supplies for nursing &amp; CHN students in Cebu City — trusted, accessible, and always within reach.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="MediSwift on Facebook" data-todo-link title="Add your Facebook page URL"><i data-icon="facebook"></i></a>
+          <a href="mailto:info@mediswiftglobalhealth.com" aria-label="Email MediSwift"><i data-icon="mail"></i></a>
+          <a href="tel:+639660772720" aria-label="Call MediSwift"><i data-icon="phone"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="vaccination.html">Vaccination Services</a></li>
+          <li><a href="shop.html">Medical Supplies Shop</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="shop.html?cat=Stethoscopes">Stethoscopes</a></li>
+          <li><a href="shop.html?cat=CHN+Bags">CHN Bags</a></li>
+          <li><a href="shop.html?cat=Nursing+Kits+%26+Tools">Nursing Kits &amp; Tools</a></li>
+          <li><a href="cart.html">My Cart</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Visit Us</h5>
+        <ul class="footer-contact">
+          <li><i data-icon="pin"></i><span>2nd Floor, Northgate Centre, Gov. M. Cuenco Ave., Cebu City, 6000</span></li>
+          <li><i data-icon="phone"></i><span>+63 966 077 2720 · (032) 509-1130</span></li>
+          <li><i data-icon="mail"></i><span>info@mediswiftglobalhealth.com</span></li>
+          <li><i data-icon="clock"></i><span>Mon–Sat, 8:00 AM – 5:00 PM</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> MediSwift Global Health Inc. All rights reserved.</span>
+      <span>Cebu City, Philippines</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/icons.js?v=2"></script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script>
+  const grid = document.getElementById('product-grid');
+  const TAG_CLASS = { 'Best Seller': 'badge-navy', 'Premium': 'badge-purple', 'MediSwift Brand': 'badge-purple', 'Student Value': 'badge-accent', 'Popular': 'badge-accent', 'Full Set': 'badge-success', 'Budget Pick': 'badge-accent' };
+
+  function renderProducts() {
+    grid.innerHTML = window.MEDISWIFT_PRODUCTS.map((p, i) => `
+      <article class="product-card reveal" data-product-card data-category="${p.category}" style="--reveal-delay:${(i % 4) * 70}ms">
+        <a href="product.html?id=${p.id}" class="product-media" aria-label="View ${p.name}">
+          ${p.tag ? `<span class="badge ${TAG_CLASS[p.tag] || 'badge-navy'}">${p.tag}</span>` : ''}
+          <i data-icon="${p.icon}"></i>
+        </a>
+        <div class="product-body">
+          <span class="product-cat">${p.category}</span>
+          <h3><a href="product.html?id=${p.id}" style="color:inherit">${p.name}</a></h3>
+          <p>${p.short}</p>
+          <div class="product-foot">
+            <div class="product-price">₱${p.price.toLocaleString('en-PH')}<small>indicative price</small></div>
+            <button class="icon-btn" data-add="${p.id}" aria-label="Add ${p.name} to cart"><i data-icon="plus"></i></button>
+          </div>
+        </div>
+      </article>
+    `).join('');
+    window.MediSwiftIcons.mount(grid);
+
+    grid.querySelectorAll('[data-add]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const id = btn.getAttribute('data-add');
+        const product = window.MediSwiftCart.findProduct(id);
+        window.MediSwiftCart.addToCart(id, 1);
+        window.MediSwiftToast.show(product.name + ' added to cart');
+      });
+    });
+
+    // re-apply reveal observer to freshly injected nodes
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); io.unobserve(entry.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+    grid.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+  }
+  renderProducts();
+
+  // Preset filter from ?cat= query param
+  const params = new URLSearchParams(window.location.search);
+  const cat = params.get('cat');
+  if (cat) {
+    const chip = document.querySelector(`[data-filter="${cat}"]`);
+    if (chip) chip.click();
+  }
+</script>
+</body>
+</html>
