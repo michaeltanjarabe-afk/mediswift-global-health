@@ -7,6 +7,7 @@ window.MEDISWIFT_PRODUCTS = [
     name: 'Littmann Classic III Stethoscope',
     category: 'Stethoscopes',
     icon: 'stethoscope',
+    image: 'assets/images/products/littmann-classic-iii.jpg',
     price: 7450,
     tag: 'Best Seller',
     short: 'The gold-standard teaching stethoscope with tunable diaphragm for adult and pediatric use.',
