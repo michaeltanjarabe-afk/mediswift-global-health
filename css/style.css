@@ -1022,8 +1022,16 @@ p{ color: var(--color-text-muted); }
 .scroll-hero__bg{
   position: absolute;
   inset: 0;
-  background: #FFFFFF;
+  background-image: url('../assets/images/vaccines/vaccination-hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
   opacity: var(--hero-bg-opacity, 1);
+}
+.scroll-hero__bg::after{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(20,18,107,0.6), rgba(45,18,90,0.72));
 }
 .scroll-hero__media{
   position: relative;
@@ -1055,14 +1063,14 @@ p{ color: var(--color-text-muted); }
   margin-top: var(--space-4);
 }
 .scroll-hero__eyebrow{
-  color: var(--purple);
+  color: #fff;
   font-weight: 700;
   font-size: var(--fs-sm);
   letter-spacing: 0.04em;
   margin-bottom: 6px;
 }
 .scroll-hero__hint{
-  color: var(--color-text-faint);
+  color: rgba(255,255,255,0.75);
   font-size: var(--fs-xs);
 }
 .scroll-hero__title{
@@ -1078,10 +1086,10 @@ p{ color: var(--color-text-muted); }
 }
 .scroll-hero__word{
   font-size: clamp(2rem, 1.4rem + 3.5vw, 4.5rem);
-  color: var(--navy);
+  color: #fff;
   white-space: nowrap;
 }
-.scroll-hero__word--right{ color: var(--purple); }
+.scroll-hero__word--right{ color: var(--color-accent); }
 .scroll-hero__content{
   position: relative;
   z-index: 2;
