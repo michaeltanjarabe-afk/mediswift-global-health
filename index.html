@@ -26,16 +26,12 @@
     <nav class="nav-links" aria-label="Primary">
       <a href="index.html" aria-current="page">Home</a>
       <a href="vaccination.html">Vaccination</a>
-      <a href="shop.html">Shop</a>
+      <a href="shop.html">Medical Supplies</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
     <div class="nav-actions">
       <a href="vaccination.html#appointment" class="btn btn-primary btn-sm nav-cta">Book Appointment</a>
-      <a href="cart.html" class="icon-btn" aria-label="View cart">
-        <i data-icon="cart"></i>
-        <span class="cart-badge" data-cart-count style="display:none">0</span>
-      </a>
       <button class="icon-btn nav-toggle" data-nav-open aria-label="Open menu" aria-expanded="false">
         <i data-icon="menu"></i>
       </button>
@@ -55,7 +51,6 @@
     <a href="shop.html">Medical Supplies</a>
     <a href="about.html">About Us</a>
     <a href="contact.html">Contact</a>
-    <a href="cart.html">Cart (<span data-cart-count>0</span>)</a>
     <div class="mobile-nav__cta">
       <a href="vaccination.html#appointment" class="btn btn-primary btn-block"><i data-icon="calendar"></i> Book Appointment</a>
     </div>
@@ -200,64 +195,40 @@
     </div>
   </section>
 
-  <!-- FEATURED PRODUCTS -->
+  <!-- SUPPLY CATEGORIES -->
   <section class="section" style="background:var(--color-surface-alt)">
     <div class="container">
       <div class="section-head reveal" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:var(--space-4);max-width:none">
         <div>
-          <span class="eyebrow">From the Shop</span>
+          <span class="eyebrow">What We Stock</span>
           <h2 style="margin-bottom:0">Gear every student needs</h2>
         </div>
-        <a href="shop.html" class="link" style="font-weight:700;color:var(--purple);display:flex;align-items:center;gap:6px">View full catalog <i data-icon="arrow-right" style="width:16px;height:16px"></i></a>
+        <a href="shop.html" class="link" style="font-weight:700;color:var(--purple);display:flex;align-items:center;gap:6px">See all supplies <i data-icon="arrow-right" style="width:16px;height:16px"></i></a>
       </div>
       <div class="grid grid-4">
-        <article class="product-card reveal">
-          <div class="product-media"><span class="badge badge-navy">Best Seller</span><img src="assets/images/products/littmann-classic-iii.jpg" alt="Littmann Classic III Stethoscope" loading="lazy"></div>
-          <div class="product-body">
-            <span class="product-cat">Stethoscopes</span>
-            <h3>Littmann Classic III</h3>
-            <p>Tunable diaphragm, adult + pediatric chestpiece.</p>
-            <div class="product-foot">
-              <div class="product-price">₱7,450<small>indicative price</small></div>
-              <button class="icon-btn" data-add-to-cart="littmann-classic-iii" aria-label="Add Littmann Classic III to cart"><i data-icon="plus"></i></button>
-            </div>
-          </div>
+        <article class="card service-card reveal">
+          <div class="icon-tile"><i data-icon="stethoscope"></i></div>
+          <h3>Stethoscopes</h3>
+          <p>Littmann and MediSwift-brand options for every budget.</p>
+          <a href="shop.html#stethoscopes" class="link">View category <i data-icon="arrow-right"></i></a>
         </article>
-        <article class="product-card reveal" style="--reveal-delay:80ms">
-          <div class="product-media"><span class="badge badge-purple">MediSwift Brand</span><i data-icon="stethoscope"></i></div>
-          <div class="product-body">
-            <span class="product-cat">Stethoscopes</span>
-            <h3>MediSwift Professional</h3>
-            <p>Budget-friendly staple for daily RLE and clinical duty.</p>
-            <div class="product-foot">
-              <div class="product-price">₱1,850<small>indicative price</small></div>
-              <button class="icon-btn" data-add-to-cart="mediswift-pro-steth" aria-label="Add MediSwift Professional Stethoscope to cart"><i data-icon="plus"></i></button>
-            </div>
-          </div>
+        <article class="card service-card reveal" style="--reveal-delay:80ms">
+          <div class="icon-tile purple"><i data-icon="bag"></i></div>
+          <h3>CHN Bags</h3>
+          <p>DOH-standard sizing with padded compartments.</p>
+          <a href="shop.html#chn-bags" class="link">View category <i data-icon="arrow-right"></i></a>
         </article>
-        <article class="product-card reveal" style="--reveal-delay:160ms">
-          <div class="product-media"><span class="badge badge-accent">Popular</span><i data-icon="bag"></i></div>
-          <div class="product-body">
-            <span class="product-cat">CHN Bags</span>
-            <h3>Premium CHN Bag</h3>
-            <p>Padded compartments for BP apparatus &amp; sterile supplies.</p>
-            <div class="product-foot">
-              <div class="product-price">₱1,650<small>indicative price</small></div>
-              <button class="icon-btn" data-add-to-cart="chn-bag-premium" aria-label="Add Premium CHN Bag to cart"><i data-icon="plus"></i></button>
-            </div>
-          </div>
+        <article class="card service-card reveal" style="--reveal-delay:160ms">
+          <div class="icon-tile"><i data-icon="first-aid"></i></div>
+          <h3>Nursing Kits &amp; Tools</h3>
+          <p>Everything for skills lab, RLE, and hospital duty.</p>
+          <a href="shop.html#nursing-kits" class="link">View category <i data-icon="arrow-right"></i></a>
         </article>
-        <article class="product-card reveal" style="--reveal-delay:240ms">
-          <div class="product-media"><span class="badge badge-success">Full Set</span><i data-icon="first-aid"></i></div>
-          <div class="product-body">
-            <span class="product-cat">Nursing Kits &amp; Tools</span>
-            <h3>Complete Nursing Kit</h3>
-            <p>BP apparatus, stethoscope, penlight, scissors &amp; tourniquet.</p>
-            <div class="product-foot">
-              <div class="product-price">₱3,200<small>indicative price</small></div>
-              <button class="icon-btn" data-add-to-cart="nursing-kit-complete" aria-label="Add Complete Nursing Kit to cart"><i data-icon="plus"></i></button>
-            </div>
-          </div>
+        <article class="card service-card reveal" style="--reveal-delay:240ms">
+          <div class="icon-tile purple"><i data-icon="shield-plus"></i></div>
+          <h3>PPE &amp; Supplies</h3>
+          <p>Masks, gloves, gowns, and face shields.</p>
+          <a href="shop.html#ppe-supplies" class="link">View category <i data-icon="arrow-right"></i></a>
         </article>
       </div>
     </div>
@@ -299,7 +270,7 @@
               <li>✓ Digital thermometer</li>
               <li>✓ PPE essentials</li>
             </ul>
-            <a href="shop.html" class="btn btn-accent btn-block" style="margin-top:var(--space-6)">Shop the checklist</a>
+            <a href="shop.html" class="btn btn-accent btn-block" style="margin-top:var(--space-6)">See what's included</a>
           </div>
         </div>
       </div>
@@ -328,7 +299,7 @@
           <div class="tip-body">
             <h3>Packing your CHN bag right</h3>
             <p>Keep instruments sorted by frequency of use — vitals tools within reach, documentation in a dry, padded pocket.</p>
-            <a href="shop.html?cat=CHN+Bags" class="tip-link">Shop CHN bags <i data-icon="arrow-right"></i></a>
+            <a href="shop.html#chn-bags" class="tip-link">Shop CHN bags <i data-icon="arrow-right"></i></a>
           </div>
         </article>
         <article class="tip-card reveal" style="--reveal-delay:160ms">
@@ -336,7 +307,7 @@
           <div class="tip-body">
             <h3>Making your stethoscope last</h3>
             <p>Wipe the diaphragm after every use and store it loosely coiled — tight winding weakens the tubing over time.</p>
-            <a href="shop.html?cat=Stethoscopes" class="tip-link">Shop stethoscopes <i data-icon="arrow-right"></i></a>
+            <a href="shop.html#stethoscopes" class="tip-link">Shop stethoscopes <i data-icon="arrow-right"></i></a>
           </div>
         </article>
       </div>
@@ -413,18 +384,17 @@
         <h5>Explore</h5>
         <ul>
           <li><a href="vaccination.html">Vaccination Services</a></li>
-          <li><a href="shop.html">Medical Supplies Shop</a></li>
+          <li><a href="shop.html">Medical Supplies</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Shop</h5>
+        <h5>Medical Supplies</h5>
         <ul>
-          <li><a href="shop.html?cat=Stethoscopes">Stethoscopes</a></li>
-          <li><a href="shop.html?cat=CHN+Bags">CHN Bags</a></li>
-          <li><a href="shop.html?cat=Nursing+Kits+%26+Tools">Nursing Kits &amp; Tools</a></li>
-          <li><a href="cart.html">My Cart</a></li>
+          <li><a href="shop.html#stethoscopes">Stethoscopes</a></li>
+          <li><a href="shop.html#chn-bags">CHN Bags</a></li>
+          <li><a href="shop.html#nursing-kits">Nursing Kits &amp; Tools</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -445,20 +415,9 @@
 </footer>
 
 <script src="js/icons.js?v=2"></script>
-<script src="js/products.js"></script>
-<script src="js/cart.js"></script>
 <script src="js/main.js"></script>
 <script src="js/scroll-hero.js"></script>
 <script>
-  document.querySelectorAll('[data-add-to-cart]').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const id = btn.getAttribute('data-add-to-cart');
-      const product = window.MediSwiftCart.findProduct(id);
-      window.MediSwiftCart.addToCart(id, 1);
-      if (product) window.MediSwiftToast.show(product.name + ' added to cart');
-    });
-  });
-
   // Testimonial carousel (placeholder content — swap in real feedback)
   const TESTIMONIALS = [
     { quote: '"Add a real testimonial here — a quick quote from a patient or student about their experience with MediSwift."', name: 'Patient / Student Name', meta: 'Program or Barangay' },

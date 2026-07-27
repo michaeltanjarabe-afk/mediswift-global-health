@@ -954,6 +954,53 @@ p{ color: var(--color-text-muted); }
 .tip-card:hover .tip-link svg{ transform: translateX(4px); }
 
 /* ============================================================
+   Category row (infographic-style supply overview)
+   ============================================================ */
+.category-row{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-7);
+  align-items: center;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  scroll-margin-top: calc(var(--header-h) + var(--space-4));
+}
+@media (min-width: 860px){
+  .category-row{ grid-template-columns: 0.85fr 1.15fr; }
+  .category-row--reverse{ grid-template-columns: 1.15fr 0.85fr; }
+  .category-row--reverse .category-row__media{ order: 2; }
+  .category-row--reverse .category-row__body{ order: 1; }
+}
+.category-row__media{
+  position: relative;
+  aspect-ratio: 4/3;
+  background: linear-gradient(155deg, var(--navy), var(--purple));
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+.category-row__media img{ width: 100%; height: 100%; object-fit: cover; }
+.category-row__media svg{ width: 32%; height: 32%; color: rgba(255,255,255,0.9); }
+.category-row__body{ padding: var(--space-7); }
+.category-row__body h2{ font-size: var(--fs-2xl); color: var(--navy); margin: var(--space-2) 0 var(--space-3); }
+.category-row__body > p{ margin-bottom: var(--space-5); }
+.category-examples{
+  display: flex; flex-wrap: wrap; gap: 10px;
+  margin-bottom: var(--space-6);
+  padding: 0; list-style: none;
+}
+.category-examples li{
+  padding: 8px 14px;
+  border-radius: var(--radius-full);
+  background: var(--blue-50);
+  border: 1px solid var(--color-border);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--navy);
+}
+
+/* ============================================================
    Pulse CTA band (heartbeat line motif)
    ============================================================ */
 .pulse-band{

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Medical Supplies Shop — Stethoscopes, CHN Bags &amp; Nursing Kits | MediSwift</title>
-<meta name="description" content="Shop Littmann and MediSwift stethoscopes, CHN bags, and nursing kits in Cebu City. Student-friendly pricing for nursing and CHN students.">
+<title>Medical Supplies — Stethoscopes, CHN Bags &amp; Nursing Kits | MediSwift</title>
+<meta name="description" content="Littmann and MediSwift stethoscopes, CHN bags, and nursing kits for nursing and CHN students in Cebu City. Contact us for current pricing and availability.">
 <meta name="theme-color" content="#14126B">
 <link rel="icon" type="image/png" href="assets/images/favicon-64.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,16 +23,12 @@
     <nav class="nav-links" aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="vaccination.html">Vaccination</a>
-      <a href="shop.html" aria-current="page">Shop</a>
+      <a href="shop.html" aria-current="page">Medical Supplies</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
     <div class="nav-actions">
       <a href="vaccination.html#appointment" class="btn btn-primary btn-sm nav-cta">Book Appointment</a>
-      <a href="cart.html" class="icon-btn" aria-label="View cart">
-        <i data-icon="cart"></i>
-        <span class="cart-badge" data-cart-count style="display:none">0</span>
-      </a>
       <button class="icon-btn nav-toggle" data-nav-open aria-label="Open menu" aria-expanded="false">
         <i data-icon="menu"></i>
       </button>
@@ -52,7 +48,6 @@
     <a href="shop.html">Medical Supplies</a>
     <a href="about.html">About Us</a>
     <a href="contact.html">Contact</a>
-    <a href="cart.html">Cart (<span data-cart-count>0</span>)</a>
     <div class="mobile-nav__cta">
       <a href="vaccination.html#appointment" class="btn btn-primary btn-block"><i data-icon="calendar"></i> Book Appointment</a>
     </div>
@@ -63,28 +58,92 @@
 
   <section class="page-hero">
     <div class="container">
-      <div class="breadcrumbs"><a href="index.html">Home</a> <i data-icon="chevron-right" style="width:12px;height:12px"></i> <span>Medical Supplies Shop</span></div>
-      <span class="eyebrow reveal">Medical Supplies Shop</span>
+      <div class="breadcrumbs"><a href="index.html">Home</a> <i data-icon="chevron-right" style="width:12px;height:12px"></i> <span>Medical Supplies</span></div>
+      <span class="eyebrow reveal">Medical Supplies</span>
       <h1 class="reveal" style="--reveal-delay:60ms">Everything on your clinical checklist</h1>
-      <p class="reveal" style="--reveal-delay:120ms">Stethoscopes, CHN bags, and nursing kits — priced for students, built for the ward. Add items to your cart and send us an inquiry; no online payment required.</p>
+      <p class="reveal" style="--reveal-delay:120ms">Stethoscopes, CHN bags, and nursing kits — sourced for students, built for the ward. Reach out and we'll confirm exact pricing and availability for your order.</p>
     </div>
   </section>
 
   <section class="section" style="padding-top:var(--space-7)">
     <div class="container">
-      <div class="product-toolbar" id="filters">
-        <button class="chip is-active" data-filter="all">All Products</button>
-        <button class="chip" data-filter="Stethoscopes">Stethoscopes</button>
-        <button class="chip" data-filter="CHN Bags">CHN Bags</button>
-        <button class="chip" data-filter="Nursing Kits & Tools">Nursing Kits &amp; Tools</button>
-        <button class="chip" data-filter="PPE & Vaccination Supplies">PPE &amp; Supplies</button>
-      </div>
+      <div style="display:grid;gap:var(--space-6)">
 
-      <div class="grid grid-4" id="product-grid" aria-live="polite"></div>
+        <article class="category-row reveal" id="stethoscopes">
+          <div class="category-row__media">
+            <img src="assets/images/products/littmann-classic-iii.jpg" alt="Littmann Classic III Stethoscope" loading="lazy">
+          </div>
+          <div class="category-row__body">
+            <div class="icon-tile"><i data-icon="stethoscope"></i></div>
+            <h2>Stethoscopes</h2>
+            <p>From the gold-standard Littmann Classic III to our budget-friendly MediSwift house brand — tunable diaphragms and adult/pediatric chestpieces built for daily ward and RLE use.</p>
+            <ul class="category-examples">
+              <li>Littmann Classic III</li>
+              <li>Littmann Cardiology IV</li>
+              <li>MediSwift Professional Stethoscope</li>
+              <li>MediSwift Lightweight Dual-Head</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary">Contact Us for Pricing <i data-icon="arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="category-row category-row--reverse reveal" id="chn-bags">
+          <div class="category-row__media">
+            <i data-icon="bag"></i>
+          </div>
+          <div class="category-row__body">
+            <div class="icon-tile purple"><i data-icon="bag"></i></div>
+            <h2>CHN Bags</h2>
+            <p>DOH-standard sizing with padded compartments for your BP apparatus, vials, and documentation — built for barangay home visits and community health rotations.</p>
+            <ul class="category-examples">
+              <li>Classic CHN Bag</li>
+              <li>Premium CHN Bag with Compartments</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary">Contact Us for Pricing <i data-icon="arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="category-row reveal" id="nursing-kits">
+          <div class="category-row__media">
+            <i data-icon="first-aid"></i>
+          </div>
+          <div class="category-row__body">
+            <div class="icon-tile"><i data-icon="first-aid"></i></div>
+            <h2>Nursing Kits &amp; Tools</h2>
+            <p>Vital-signs tools and small instruments sized for a student locker — everything you need for skills lab, RLE, and hospital duty in one place.</p>
+            <ul class="category-examples">
+              <li>Complete Nursing Kit Set</li>
+              <li>Basic Skills Lab Kit</li>
+              <li>Aneroid Sphygmomanometer</li>
+              <li>Digital Infrared Thermometer</li>
+              <li>Penlight with Pupil Gauge</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary">Contact Us for Pricing <i data-icon="arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="category-row category-row--reverse reveal" id="ppe-supplies">
+          <div class="category-row__media">
+            <i data-icon="shield-plus"></i>
+          </div>
+          <div class="category-row__body">
+            <div class="icon-tile purple"><i data-icon="shield-plus"></i></div>
+            <h2>PPE &amp; Vaccination Supplies</h2>
+            <p>Masks, gloves, gowns, and face shields ready for hospital duty, community immersion, or vaccination-day volunteering.</p>
+            <ul class="category-examples">
+              <li>PPE Starter Pack</li>
+              <li>Surgical Masks &amp; Nitrile Gloves</li>
+              <li>Isolation Gowns &amp; Face Shields</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary">Contact Us for Pricing <i data-icon="arrow-right"></i></a>
+          </div>
+        </article>
+
+      </div>
 
       <div class="form-note reveal" style="margin-top:var(--space-8)">
         <i data-icon="check-circle"></i>
-        <span>Prices shown are indicative estimates. Final pricing, stock, and bulk/school discounts are confirmed when we respond to your inquiry.</span>
+        <span>These are our core categories — ask us about a specific brand, model, or size and we'll confirm availability.</span>
       </div>
     </div>
   </section>
@@ -125,18 +184,17 @@
         <h5>Explore</h5>
         <ul>
           <li><a href="vaccination.html">Vaccination Services</a></li>
-          <li><a href="shop.html">Medical Supplies Shop</a></li>
+          <li><a href="shop.html">Medical Supplies</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Shop</h5>
+        <h5>Medical Supplies</h5>
         <ul>
-          <li><a href="shop.html?cat=Stethoscopes">Stethoscopes</a></li>
-          <li><a href="shop.html?cat=CHN+Bags">CHN Bags</a></li>
-          <li><a href="shop.html?cat=Nursing+Kits+%26+Tools">Nursing Kits &amp; Tools</a></li>
-          <li><a href="cart.html">My Cart</a></li>
+          <li><a href="shop.html#stethoscopes">Stethoscopes</a></li>
+          <li><a href="shop.html#chn-bags">CHN Bags</a></li>
+          <li><a href="shop.html#nursing-kits">Nursing Kits &amp; Tools</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -157,59 +215,6 @@
 </footer>
 
 <script src="js/icons.js?v=2"></script>
-<script src="js/products.js"></script>
-<script src="js/cart.js"></script>
 <script src="js/main.js"></script>
-<script>
-  const grid = document.getElementById('product-grid');
-  const TAG_CLASS = { 'Best Seller': 'badge-navy', 'Premium': 'badge-purple', 'MediSwift Brand': 'badge-purple', 'Student Value': 'badge-accent', 'Popular': 'badge-accent', 'Full Set': 'badge-success', 'Budget Pick': 'badge-accent' };
-
-  function renderProducts() {
-    grid.innerHTML = window.MEDISWIFT_PRODUCTS.map((p, i) => `
-      <article class="product-card reveal" data-product-card data-category="${p.category}" style="--reveal-delay:${(i % 4) * 70}ms">
-        <a href="product.html?id=${p.id}" class="product-media" aria-label="View ${p.name}">
-          ${p.tag ? `<span class="badge ${TAG_CLASS[p.tag] || 'badge-navy'}">${p.tag}</span>` : ''}
-          ${p.image ? `<img src="${p.image}" alt="${p.name}" loading="lazy">` : `<i data-icon="${p.icon}"></i>`}
-        </a>
-        <div class="product-body">
-          <span class="product-cat">${p.category}</span>
-          <h3><a href="product.html?id=${p.id}" style="color:inherit">${p.name}</a></h3>
-          <p>${p.short}</p>
-          <div class="product-foot">
-            <div class="product-price">₱${p.price.toLocaleString('en-PH')}<small>indicative price</small></div>
-            <button class="icon-btn" data-add="${p.id}" aria-label="Add ${p.name} to cart"><i data-icon="plus"></i></button>
-          </div>
-        </div>
-      </article>
-    `).join('');
-    window.MediSwiftIcons.mount(grid);
-
-    grid.querySelectorAll('[data-add]').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const id = btn.getAttribute('data-add');
-        const product = window.MediSwiftCart.findProduct(id);
-        window.MediSwiftCart.addToCart(id, 1);
-        window.MediSwiftToast.show(product.name + ' added to cart');
-      });
-    });
-
-    // re-apply reveal observer to freshly injected nodes
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); io.unobserve(entry.target); }
-      });
-    }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
-    grid.querySelectorAll('.reveal').forEach((el) => io.observe(el));
-  }
-  renderProducts();
-
-  // Preset filter from ?cat= query param
-  const params = new URLSearchParams(window.location.search);
-  const cat = params.get('cat');
-  if (cat) {
-    const chip = document.querySelector(`[data-filter="${cat}"]`);
-    if (chip) chip.click();
-  }
-</script>
 </body>
 </html>
