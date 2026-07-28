@@ -532,6 +532,16 @@ p{ color: var(--color-text-muted); }
 .icon-tile.purple{ background: var(--purple-100); color: var(--purple); }
 .icon-tile.navy{ background: var(--navy); color: var(--color-accent); }
 
+.icon-tile-photo{
+  width: 64px; height: 64px;
+  border-radius: 18px;
+  overflow: hidden;
+  margin-bottom: var(--space-4);
+  box-shadow: var(--shadow-sm);
+}
+.icon-tile-photo img{ width: 100%; height: 100%; object-fit: cover; }
+.icon-tile-photo.lg{ width: 88px; height: 88px; border-radius: 22px; }
+
 .service-card h3{ font-size: var(--fs-lg); color: var(--navy); margin-bottom: var(--space-2); }
 .service-card p{ font-size: var(--fs-sm); margin-bottom: var(--space-4); }
 .service-card .link{
