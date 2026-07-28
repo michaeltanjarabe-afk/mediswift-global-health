@@ -45,6 +45,7 @@
     clipboard: '<rect x="5.5" y="4.5" width="13" height="16" rx="2"/><rect x="9" y="3" width="6" height="3" rx="1"/><path d="M8.5 11h7M8.5 14.5h7M8.5 18h4.5"/>',
     home: '<path d="M4 11.5 12 4l8 7.5"/><path d="M6 10v9.5h12V10"/>',
     'shield-plus': '<path d="M12 3.2 19 6v5.6c0 4.8-3 8-7 9.2-4-1.2-7-4.4-7-9.2V6Z"/><path d="M12 8.5v6.5M8.7 11.8h6.6"/>',
+    'trending-down': '<path d="M3.5 7.5 10 14l4-4 6.5 6.5"/><path d="M20.5 12v4.5H16"/>',
   };
 
   function mount(root) {
